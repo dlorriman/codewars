@@ -3,3 +3,6 @@
 function howManySmaller(arr,n) {
     return arr.filter(x => +x.toFixed(2) < n).length
 }
+
+const howManySmaller = (arr, n) =>
+  arr.filter(val => val.toFixed(2) < n).length
