@@ -16,4 +16,7 @@ r
 s
 */
 
-
+let someString = 'Hello World!'
+console.log(someString.slice(6))
+console.log(someString.substring(6))
+console.log(someString.substr(6)) // deprecated
