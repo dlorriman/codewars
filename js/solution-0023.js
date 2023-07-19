@@ -15,3 +15,5 @@ function index(array, n){
 function index(array, n){
     return array[n]**n || -1
   }
+
+const index = (array, n) => n ? array[n]**n : -1
