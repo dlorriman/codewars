@@ -10,3 +10,5 @@ function toBinary(n){
 }
 
 let toBinary = n => +n.toString(2)
+
+toBinary = n => parseInt(n.toString(2))
