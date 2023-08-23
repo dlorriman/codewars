@@ -8,3 +8,5 @@ function toBinary(n){
 function toBinary(n){
     return +n.toString(2)
 }
+
+let toBinary = n => +n.toString(2)
