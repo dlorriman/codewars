@@ -28,3 +28,5 @@ function sumTwoSmallestNumbers(numbers) {
 }
 
 sumTwoSmallestNumbers([19, 5, 42, 2, 77])
+
+const sumTwoSmallestNumbers = num => num.sort((a,b) => a-b).slice(0,2).reduce((x,y) => x+y)
