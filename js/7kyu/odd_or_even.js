@@ -25,3 +25,12 @@
 // 3. return either 'odd' or 'even' as a string
 
 const oddOrEven = array => array.reduce((a,c) => a+c, 0) %2 ? 'odd' : 'even'
+
+function oddOrEven(array) {
+    let result = array.reduce((acc, c) => acc + c, 0)
+    if (result % 2 === 0) {
+        return 'even'
+    } else {
+        return 'odd'
+    }
+}
