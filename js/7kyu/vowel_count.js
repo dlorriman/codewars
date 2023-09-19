@@ -14,18 +14,10 @@
 // start count at zero
 // loop through each character of the string adding vowels to the count
 
-function getCount(str) {
-    let vowelCount = 0
-
-
-
-    return vowelCount
-}
-
 // Solution 1: Using a for loop
 
-function countVowels(str) {
-    const vowels = ['a', 'e', 'i', 'o', 'u']
+function getCount(str) {
+    const vowels = 'aeiou'
     let count = 0
 
     for (let i = 0; i < str.length; i++) {
@@ -38,7 +30,7 @@ function countVowels(str) {
 
 // Solution using forEach and split
 
-function countVowels(str) {
+function getCount(str) {
     const vowels = ['a', 'e', 'i', 'o', 'u']
     let count = 0
 
@@ -53,8 +45,14 @@ function countVowels(str) {
 
 // Using reduce and split
 
-function countVowels(str) {
+function getCount(str) {
     const vowels = ['a', 'e', 'i', 'o', 'u']
 
-    
+    return str.split('').reduce((count, char) => {
+        if(vowels.includes(char)) {
+            return count + 1
+        } else {
+            return count
+        }
+    }, 0)
 }
