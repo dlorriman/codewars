@@ -16,3 +16,5 @@ Split the string on the spaces and rejoin it with no spaces
 function noSpace(str) {
     return str.split(' ').join('')
 }
+
+const noSpace = s => s.split(' ').join('')
