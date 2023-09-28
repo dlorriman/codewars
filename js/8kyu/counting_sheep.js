@@ -39,3 +39,10 @@ function countSheeps(sheep) {
 }
 
 const countSheeps = s => s.filter(Boolean).length
+
+// forEach plus ternary
+function countSheeps(sheep) {
+    let count = 0
+    sheep.forEach(sheep => sheep ? count++ : count)
+    return count
+}
