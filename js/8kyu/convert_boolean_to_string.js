@@ -23,15 +23,15 @@ function booleanToString(b) {
     else return 'false'
 }
 
+// turnary conditional statement
 const booleanToString = b => b ? 'true' : 'false'
-
+// toString method
 const booleanToString = b => b.toString()
-
+// String constructor arrow function
 const booleanToString = b => String(b)
-
+// string interpolation
 const booleanToString = b => `${b}`
-
+// string concatination
 const booleanToString = b => b+''
-
+// String constructor
 const booleanToString = String
-
