@@ -20,11 +20,13 @@ Sort the array highest to lowest.
 Return an array containing only the lowest and highest numbers.
 */
 
-// function minMax(arr) {
-//     arr.sort((a,b) => a-b)
-//     return [arr[0], arr[arr.length-1]]
-// }
+// using the sort method
+function minMax(arr) {
+    arr.sort((a,b) => a-b)
+    return [arr[0], arr[arr.length-1]]
+}
 
+// using the Math object and min / max methods
 function minMax(arr) {
     return [Math.min(...arr), Math.max(...arr)]
 }
