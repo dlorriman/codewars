@@ -31,4 +31,4 @@ function minMax(arr) {
     return [Math.min(...arr), Math.max(...arr)]
 }
 
-console.log(minMax([4, 3, 2, 5, 1]))
+console.log(minMax([4, 3, 2, 5, 1])) // [1, 5]
