@@ -42,3 +42,11 @@ function removeSmallest(arr) {
     // create a new array without the element at the found index
     return [...arr.slice(0, minIndex), ...arr.slice(minIndex +1)]
 }
+
+function removeSmallest(num) {
+    const minIndex = num.indexOf(Math.min(...num))
+    return [...num.slice(0, minIndex), ...num.slice(minIndex + 1)]
+}
+
+const removeSmallest = num => num.filter((e, i) => i !== num.indexOf(Math.min(...num)))
+
