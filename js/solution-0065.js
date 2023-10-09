@@ -7,3 +7,5 @@ Return true if they are or false if not.
 */
 
 const smallEnough = (arr, l) => arr.every(e => e <= l)
+
+const smallEnough = (arr, l) => Math.max(...arr) <= l
