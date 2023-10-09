@@ -16,12 +16,18 @@ The start number will always be smaller than the end number. Both numbers can be
 
 function dontGiveMeFive(start, end) {
     let count = 0
-
     for (let i = start; i <= end; i++) {
         if (i.toString().includes('5') === false) {
             count++
         }
     }
-
     return count
+}
+
+function dontGiveMeFive(start, end) {
+    let result = []
+    for (let i = start; i <= end; i++) {
+        if (!i.toString().includes('5')) result.push(i)
+    }
+    return result.length
 }
