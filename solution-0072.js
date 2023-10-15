@@ -22,19 +22,9 @@ function sumOfMinimums(arr) {
 }
 
 function sumOfMinimums(arr) {
-    let total = 0
-
-    for (let i = 0; i < arr.length; i++) {
-        total += Math.min(...arr[i])
-    }
-    return total
-}
-
-function sumOfMinimums(arr) {
     let sum = 0
-    for (let row of arr) {
-        const minInRow = Math.min(...row)
-        sum += minInRow
+    for (let i = 0; i < arr.length; i++) {
+        sum += Math.min(...arr[i])
     }
     return sum
 }
