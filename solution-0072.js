@@ -36,3 +36,9 @@ function sumOfMinimums(arr) {
     }
     return sum
 }
+
+function sumOfMinimums(arr) {
+    let sum = 0
+    arr.forEach(e => sum += e.sort((a,b) => a-b)[0])
+    return sum
+}
