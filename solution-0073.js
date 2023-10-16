@@ -36,3 +36,9 @@ function rowWeights(arr) {
     }, [0, 0])
 }
 
+function rowWeights(arr) {
+    let evenSum = arr.filter((e, i) => i%2 === 0).reduce((acc, c) => acc + c, 0)
+    let oddSum = arr.filter((e, i) => i%2 !== 0).reduce((acc, c) => acc + c, 0)
+    
+    return [evenSum, oddSum]
+}
