@@ -27,3 +27,12 @@ function rowWeights(arr) {
     }
     return [evenSum, oddSum]
 }
+
+function rowWeights(arr) {
+    return arr.reduce((acc, c, i) => {
+        const targetSum = i%2 === 0 ? acc[0] : acc[1]
+        acc[i%2] = targetSum + c
+        return acc
+    }, [0, 0])
+}
+
