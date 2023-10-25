@@ -24,3 +24,9 @@ function divCon(arr) {
     }
     return intSum - strSum
 }
+
+function divCon(arr) {
+    return arr.reduce((acc, c) => typeof c === 'number' ? acc + c : acc - +c, 0)
+}
+
+const divCon = arr => arr.reduce((acc, c) => typeof c === 'number' ? acc + c : acc - +c, 0)
