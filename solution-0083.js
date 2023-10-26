@@ -27,6 +27,18 @@ const fakeBin = str => str.split('').map(e => e < 5 ? 0 : 1).join('')
 
 function fakeBin(str) {
     let result = ''
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] < 5) {
+            result += '0'
+        } else {
+            result += '1'
+        }
+    }
+    return result
+}
+
+function fakeBin(str) {
+    let result = ''
     for (num of str) {
         if (num < 5) {
             result += '0'
