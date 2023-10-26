@@ -16,6 +16,7 @@ Replace the value with 0 or 1 depending on the condition
 Return the array modified array as a string
 */
 
+// function declaration using methods
 function fakeBin(str) {
     return str
     .split('')
@@ -23,8 +24,10 @@ function fakeBin(str) {
     .join('')
 }
 
+// arrow function using methods
 const fakeBin = str => str.split('').map(e => e < 5 ? 0 : 1).join('')
 
+// using a for loop
 function fakeBin(str) {
     let result = ''
     for (let i = 0; i < str.length; i++) {
@@ -37,6 +40,7 @@ function fakeBin(str) {
     return result
 }
 
+// using a for of loop
 function fakeBin(str) {
     let result = ''
     for (num of str) {
@@ -46,6 +50,15 @@ function fakeBin(str) {
             result += '1'
         }
     }
+    return result
+}
+
+// using the spread operator and a forEach loop
+function fakeBin(str) {
+    let result = '';
+    [...str].forEach(char => {
+        result += parseInt(char) < 5 ? '0' : '1'
+    })
     return result
 }
 
