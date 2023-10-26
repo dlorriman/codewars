@@ -62,3 +62,13 @@ function fakeBin(str) {
     return result
 }
 
+// using a while loop with turnary operator
+function fakeBin(str) {
+    let result = ''
+    let i = 0
+    while (i < str.length) {
+        result += str[i] < 5 ? '0' : '1'
+        i++
+    }
+    return result
+}
