@@ -23,3 +23,4 @@ function fakeBin(str) {
     .join('')
 }
 
+const fakeBin = str => str.split('').map(e => e < 5 ? 0 : 1).join('')
