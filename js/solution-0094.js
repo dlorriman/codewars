@@ -13,3 +13,5 @@ twoSort(["turns", "out", "random", "test", "cases", "are", "easier", "than", "wr
 function twoSort(arr) {
     return arr.sort()[0].split('').join('***')
 }
+
+const twoSort = s => [...s.sort()[0]].join('***')
