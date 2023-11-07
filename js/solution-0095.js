@@ -16,3 +16,5 @@ function fixTheMeerkat(arr) {
 const fixTheMeerkat = a => a.reverse()
 
 const fixTheMeerkat = ([tail, body, head]) => [head, body, tail]
+
+const fixTheMeerkat = arr => [arr[2], arr[1], arr[0]]
