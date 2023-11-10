@@ -20,4 +20,14 @@ function divisibleBy(arr, d) {
     return arr.filter(e => e%d===0)
 }
 
-const divisibleBy = (a, d) => a.filter(e => e%d)
+const divisibleBy = (a, d) => a.filter(e => !(e%d))
+
+function divisibleBy(arr, d) {
+    let newArr = []
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % d === 0) {
+            newArr.push(arr[i])
+        }
+    }
+    return newArr
+}
