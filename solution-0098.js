@@ -19,3 +19,5 @@ Filter the array by numbers that modulo zero
 function divisibleBy(arr, d) {
     return arr.filter(e => e%d===0)
 }
+
+const divisibleBy = (a, d) => a.filter(e => e%d)
