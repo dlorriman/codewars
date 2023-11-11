@@ -25,3 +25,8 @@ function distinct(arr) {
         return newArr
     }
 }
+
+// filter method
+function distinct(arr) {
+    return arr.filter((e, i) => arr.indexOf(e) === i);
+  }
