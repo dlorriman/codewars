@@ -30,3 +30,10 @@ function distinct(arr) {
 function distinct(arr) {
     return arr.filter((e, i) => arr.indexOf(e) === i);
   }
+
+// forEach method
+function distinct(arr) {
+    let newArr = []
+    arr.forEach(e => !newArr.includes(e) ? newArr.push(e) : 0)
+    return newArr
+}
