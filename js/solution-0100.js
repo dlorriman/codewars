@@ -23,3 +23,8 @@ function mergeArrays(arr1, arr2) {
     return mergedArray
 }
 
+function mergeArrays(arr1, arr2) {
+    const mergedArray = [...new Set([...arr1, ...arr2])]
+    return mergedArray.sort((a,b) => a-b)
+}
+
