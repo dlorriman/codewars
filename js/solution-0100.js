@@ -31,3 +31,5 @@ function mergeArrays(arr1, arr2) {
 const mergeArrays = (arr1, arr2) => [...new Set([...arr1, ...arr2])].sort((a,b) => a-b)
 
 const mergeArrays = (arr1, arr2) => [...new Set(arr1.concat(arr2))].sort((a,b) => a-b)
+
+const mergeArrays = (arr1, arr2) => arr1.filter(e => !arr2.includes(e)).concat(arr2).sort((a,b) => a-b)
