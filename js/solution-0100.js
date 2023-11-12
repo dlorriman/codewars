@@ -28,3 +28,4 @@ function mergeArrays(arr1, arr2) {
     return mergedArray.sort((a,b) => a-b)
 }
 
+const mergeArrays = (arr1, arr2) => [...new Set([...arr1, ...arr2])].sort((a,b) => a-b)
