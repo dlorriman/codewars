@@ -10,8 +10,7 @@ patrick feeney => P.F
 
 Pseudocode:
 Split name into an array of 2 names using the space as delimiter
-Map the array to a new array of only the first letters
-Convert to uppercase
+Map the array to a new array of only the first letters, convert to uppercase
 Join back into a string with a '.' as delimiter
 
 */
