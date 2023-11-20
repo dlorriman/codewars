@@ -26,4 +26,8 @@ function array(string) {
     return result === '' ? null : result
 }
 
+function array(string) {
+    return string.split(',').slice(1, -1).join(' ') || null
+}
+
 const array = str => str.split(',').slice(1, -1).join(' ') || null
