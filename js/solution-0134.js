@@ -20,3 +20,9 @@ function updateLight(string) {
 }
 
 updateLight = string => string === 'green' ? 'yellow' : string === 'yellow' ? 'red' : 'green'
+
+updateLight = string => ({
+    green: 'yellow',
+    yellow: 'red',
+    red: 'green'
+}) [string]
