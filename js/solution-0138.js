@@ -14,10 +14,12 @@ Examples:
 Pseudocode:
 Convert the string to an array,
 map the array so that each element is repeated,
-join the array back to a string
+join the array back into a string
 
 */
 
 function doubleChar(str) {
     return str.split('').map(e => e+e).join('')
 }
+
+doubleChar = str => str.split('').map(e => e+e).join('')
