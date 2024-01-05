@@ -48,7 +48,8 @@ function remove(s, n) {
 }
 
 function remove(s, n) {
-    for(let i = 0; i < n; i++)
-      s = s.replace(/!/, '');
-    return s;
-  }
+    for(let i = 0; i < n; i++) {
+        s = s.replace(/!/, '')
+    }
+    return s
+}
