@@ -46,3 +46,9 @@ function remove(s, n) {
 function remove(s, n) {
     return n > 0 ? remove(s.replace('!', ''), n - 1) : s
 }
+
+function remove(s, n) {
+    for(let i = 0; i < n; i++)
+      s = s.replace(/!/, '');
+    return s;
+  }
