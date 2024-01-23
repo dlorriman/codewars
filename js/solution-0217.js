@@ -16,6 +16,8 @@ function validateCode(n) {
     return /^[1-3]/.test(n.toString())
 }
 
+const validateCode = n => /^[1-3]/.test(n)
+
 function validateCode(n) {
     const x = [...n.toString()][0]
     return x === '1' || x === '2' || x === '3'
