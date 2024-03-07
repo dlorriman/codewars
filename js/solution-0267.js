@@ -15,3 +15,9 @@ function yearDays(year) {
 		return `${year} has 365 days`
 	}
 }
+
+function yearDays(year) {
+	let days = year % 4 ? 365 : year % 100 ? 366 : year % 400 ? 365 : 366
+
+	return `${year} has ${days} days`
+}
