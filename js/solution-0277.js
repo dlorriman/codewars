@@ -8,3 +8,7 @@ Return true if the function returns false for all of the items in the array. */
 function none(arr, fun) {
 	return arr.every(item => !fun(item))
 }
+
+function none(arr, fun) {
+	return !arr.some(fun)
+}
